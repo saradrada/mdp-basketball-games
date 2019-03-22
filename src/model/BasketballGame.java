@@ -181,11 +181,9 @@ public class BasketballGame {
 
 	public String[][] generateMatrix() {
 
-		String win = "Ganar";
-		String loose = "Perder";
+		String win = "Win";
+		String loose = "Lose";
 		String[][] matrix;
-//		DecimalFormat df = new DecimalFormat("#.######");
-//		df.setRoundingMode(RoundingMode.CEILING);
 		if (size == 2) {
 			matrix = new String[3][3];
 			int k = 0;
@@ -197,8 +195,7 @@ public class BasketballGame {
 			for (int i = 1; i < matrix.length; i++) {
 				for (int j = 1; j < matrix[0].length; j++) {
 
-//					matrix[i][j] = (df.format(consecutives().get(k)));
-					matrix[i][j] = ((double)Math.round(consecutives().get(k) * 100d) / 100d)+"";
+					matrix[i][j] = ((double) Math.round(consecutives().get(k) * 100d) / 100d) + "";
 					k++;
 				}
 			}
@@ -219,22 +216,14 @@ public class BasketballGame {
 
 			for (int i = 1; i < matrix.length; i++) {
 				for (int j = 1; j < matrix[0].length; j++) {
-					
-					
-					matrix[i][j] = ((double)Math.round(consecutives().get(k) * 100d) / 100d)+"";
+
+					matrix[i][j] = ((double) Math.round(consecutives().get(k) * 100d) / 100d) + "";
 					k++;
 				}
 			}
 		}
 
 		return matrix;
-	}
-
-	public static void main(String[] args) {
-		BasketballGame bg = new BasketballGame(3);
-		String[][] a = bg.generateMatrix();
-
-
 	}
 
 }

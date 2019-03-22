@@ -1,0 +1,19 @@
+.button {
+	-fx-background-color:#ffa200;
+	-fx-moz-border-radius:25px;
+	-fx-webkit-border-radius:28px;
+	-fx-border-radius:28px;
+	-fx-border:1px solid #fca919;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-color:#ffffff;
+	-fx-text-decoration:none;
+	-fx-text-shadow:0px 1px 0px #ffbb45;
+}
+.button:hover {
+	-fx-background-color:#ffbb45;
+}
+.button:active {
+	-fx-position:relative;
+	-fx-top:1px;
+}
