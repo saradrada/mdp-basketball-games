@@ -15,9 +15,9 @@ public class Main extends Application {
 		Scene scene = new Scene(root);
 		stage.setTitle("MDP - Basketball Game");
 		stage.setScene(scene);
+		stage.sizeToScene();
 		stage.show();
 
-		
 	}
 
 	public static void main(String[] args) {
