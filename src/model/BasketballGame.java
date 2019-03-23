@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class BasketballGame {
 
-	public static String ARCHIVE = "./data/scores.txt";
+	public static String ARCHIVE = "./resources/data/scores.txt";
 
 	private ArrayList<Integer> scores;
 	private int totalLose;
